@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <title>Distribuidora Lira</title>
+</head>
+
+<body>
+    <nav class="page-nav">
+        <h1>Distribuidora de carnes Lira</h1>
+        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    </nav>
+    <aside>
+        <div>
+            <h1>Catalogo</h1>
+            <h3>Carne aves</h3>
+            <h3>Carne Vacuno</h3>
+            <h3>Carne cerdo</h3>
+            <p>Trabajamos con productos de alta calidad, frescos y al vacio (cortes de vacuno)</p>
+            <p>Los productos al vacio vienen con sus respectivos pesos, para saber mas haz <br><a href="#insta">click aqui!</a></p>
+        </div>
+    </aside>
+    <section class="page-content">
+        <div class="product-container">
+            <h2>Pechuga deshuesada fresca</h2>
+            <img src="/assets/img/pechuga deshuesada.jpg" alt="Pechuga deshuesada">
+            <h2>$6.550 (kg)</h2>
+            <button class="button-add" onclick="add('pechuga deshuesada', 6.500)">Agregar</button>
+        </div>
+        <div class="product-container">
+            <h2>Pollo entero</h2>
+            <img src="/assets/img/pollo entero.jpg" alt="Pollo entero">
+            <h2>$3.750 (kg)</h2>
+            <button class="button-add" onclick="add('pollo entero', 3.750)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Trutro de pollo entero</h2>
+            <img src="/assets/img/trutro entero.jpg" alt="Trutro entero o largo">
+            <h2>$3.150 (kg)</h2>
+            <button class="button-add" onclick="add('trutro entero', 3.150)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Asiento</h2>
+            <img src="/assets/img/asiento.png" alt="Asiento - vacuno">
+            <h2>$8.690 (kg)</h2>
+            <button class="button-add" onclick="add('asiento', 8.690)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Huachalomo</h2>
+            <img src="/assets/img/huachalomo.jpg" alt="Huachalomo - vacuno">
+            <h2>$7.390 (kg)</h2>
+            <button class="button-add" onclick="add('huachalomo', 7.390)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Lomo Vetado</h2>
+            <img src="/assets/img/lm.jpg" alt="Lomo vetado - vacuno">
+            <h2>$10.850 (kg)</h2>
+            <button class="button-add" onclick="add('lm', 10.850)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Lomo liso</h2>
+            <img src="/assets/img/lomo liso.jpg" alt="Lomo liso - vacuno">
+            <h2>$8.350 (kg)</h2>
+            <button class="button-add" onclick="add('lomo liso', 8.350)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Molida especial</h2>
+            <img src="/assets/img/molidat.png" alt="Molida especial - vacuno">
+            <h2>$9.800 (kg)</h2>
+            <button class="button-add" onclick="add('molidat', 9.800)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Posta negra</h2>
+            <img src="/assets/img/posta-negra.jpg" alt="Posta negra - vacuno">
+            <h2>$8.190 (kg)</h2>
+            <button class="button-add" onclick="add('posta-negra', 8.190)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Posta rosada</h2>
+            <img src="/assets/img/posta-rosada.jpg" alt="Posta rosada - vacuno">
+            <h2>$8.090 (kg)</h2>
+            <button class="button-add" onclick="add('posta-rosada', 8.090)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Punta de ganso</h2>
+            <img src="/assets/img/punta-de-ganso.jpg" alt="Punta de ganso - vacuno">
+            <h2>$11.300 (kg)</h2>
+            <button class="button-add" onclick="add('punta-de-ganso', 11.300)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Punta picana</h2>
+            <img src="/assets/img/punta-picana.jpg" alt="Punta picana - vacuno">
+            <h2>$8.090 (kg)</h2>
+            <button class="button-add" onclick="add('punta-picana', 8.090)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2>Tapapecho</h2>
+            <img src="/assets/img/tapapecho.jpg" alt="Tapapecho - vacuno">
+            <h2>$6.890 (kg)</h2>
+            <button class="button-add" onclick="add('tapapecho', 6.890)">Agregar</button>
+        </div>
+    </section>
+    <footer>
+        <div id="insta">
+            <a href="https://www.instagram.com/p/CU56bhfpX-r/?igshid=MDJmNzVkMjY=" target="_blank" class="instagram-follow-button" 
+                data-show-count="false">Síganos en el Instagram!</a>
+            <script async src="https://www.instagram.com/" charset="utf-8"></script>
+        </div>
+    </footer>
+</body>
+
+</html>
